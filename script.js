@@ -14,6 +14,9 @@ keys.addEventListener('click', e => {
         if (!action) {
             console.log('number key!')
           }
+        if(action === "add" || action === "subtract" || action === "multiply" || action === "divide"){
+            console.log("operator key");
+        }
 
     }
 })
