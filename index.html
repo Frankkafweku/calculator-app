@@ -12,47 +12,47 @@
 <body>
     <main class="main">
         <div class="text-area">
-            <textarea name="results" id="results" cols="40" rows="8"></textarea>
+            <!-- <textarea name="results" id="results" cols="40" rows="8"></textarea> -->
+        <div id="results"></div>
         </div>
         <section class="calc-buttons">
-            <button class="buttons">C</button>
+            <button class="buttons" data-action="clear">CA</button>
             <div id="numbers">
                 <div id="num7-9">
-                    <button class="buttons">7</button>
-                    <button class="buttons">8</button>
-                    <button class="buttons">9</button>
+                    <button class="buttons" value="7">7</button>
+                    <button class="buttons" value="8">8</button>
+                    <button class="buttons" value="9">9</button>
                 </div>
                 <div id="num4-6">
-                    <button class="buttons">4</button>
-                    <button class="buttons">5</button>
-                    <button class="buttons">6</button>
+                    <button class="buttons" value="4">4</button>
+                    <button class="buttons" value="5">5</button>
+                    <button class="buttons" value="6">6</button>
                 </div>
                 <div id="num1-3">
-                    <button class="buttons">1</button>
-                    <button class="buttons">2</button>
-                    <button class="buttons">3</button>
+                    <button class="buttons" value="1">1</button>
+                    <button class="buttons" value="2">2</button>
+                    <button class="buttons" value="3">3</button>
                 </div>
                 <div class="last">
-                    <button class="buttons">.</button>
-                    <button class="buttons">0</button>
-                    <button class="buttons">Del</button>
+                    <button class="buttons" value="." data-action="decimal">.</button>
+                    <button class="buttons" value="0" >0</button>
+                    <button class="buttons" value="" id="delete">Del</button>
                 </div>
 
             </div>
 
             <div id="right-signs">
                 <div id="top">
-                <button class="buttons">/</button>
-                <button class="buttons">X</button>
+                <button class="buttons" value="/" id="devide" data-action="divide">/</button>
+                <button class="buttons" value="*" id="multiply"  data-action="multiply">X</button>
                 
             </div>
-                <button class="buttons">+</button>
-                <button class="buttons">-</button>
+                <button class="buttons" value="+" id="add"  data-action="add">+</button>
+                <button class="buttons" value="-" id="subtract" data-action="subtract">-</button>
             </div>
-            <button type="submit" id="enter">Enter</button> 
+            <button type="submit" id="enter" value="" data-action="calculate">=</button> 
         </section>
-        
-        
+         
 
     </main>
 
